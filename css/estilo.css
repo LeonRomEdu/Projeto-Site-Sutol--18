@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Abecedary';
+    src: url(../Abecedary-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Candy';
+    src: url(../Candy\ Shop.ttf) format('truetype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/espaco2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+
+
+
+}
+
+.fundo2 {
+    background-color: rgba(169, 169, 169);
+    background-image: url(../img/textura-de-papel-branco_1194-5416.webp);
+    padding-top: 10px;
+    border-radius: 10px;
+
+}
+
+
+.link1{
+    color: #fe4164;
+    border: 1px solid #fe4164;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px #fe4164;
+    text-shadow: 3px 3px 3px 3px #fe4164;
+}
+
+.botaodow {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    padding: 60px 0;
+
+}
+
+.botaoefeito {
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 1000px;
+    color: black;
+    transition: all 0.6s ease-in-out 0s;
+    box-shadow: inset 0 0 20px black;
+    background: transparent;
+    color: #ccff33;
+    box-shadow: 0 0 20px #40fef3;
+}
+
+.botaoefeito:hover {
+
+    color: #fe4164;
+    transform: scale(1)rotate(360deg);
+    box-shadow: 0 0 20px #fe4164;
+}
+
+.imagemtopo {
+    height: 100px;
+    width: 220px;
+}
+
+.personagens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personagem1 {
+    height: 440px;
+    width: 400px;
+    background-color: rgba(169, 169, 169);
+    border-radius: 10px;
+
+
+}
+
+
+.personagem2 {
+    height: 440px;
+    width: 400px;
+    background-color: rgba(169, 169, 169);
+    border-radius: 10px;
+
+}
+
+.personagem3 {
+    height: 440px;
+    width: 400px;
+    background-color: rgba(169, 169, 169);
+    border-radius: 10px;
+
+}
+
+.boneco1 {
+    width: 200px;
+    height: 200px;
+    margin: 0 0 0 100px;
+    opacity: 1;
+
+}
+
+.foguete {
+    width: 600px;
+    height: 300px;
+}
+ 
+
+
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    font-family: 'Candy';
+    font-size: 22px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Abecedary';
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.flavio{
+    color: #0000CD;
+}
+
+.steff{
+    color: #fe4164;
+}
+
+.isaac{
+    color: #ccff33;
+}
+
+.titulo{
+    color: 	#D2691E;
+}
+
+@keyframes fogueteanimation{
+    0%{left: -40px;}
+    100%{left: 2800px;}
+}
+
+@keyframes solanimation{
+    0%{transform: rotate(0grad);}
+    50%{transform: rotate(360grad);}
+    100%{transform: rotate(0grad);}
+}
+
+@keyframes luaanimation{
+    0%{transform: rotate(0grad);}
+    50%{transform: rotate(100grad);}
+    100%{transform: rotate(0grad);}
+}
+
+@keyframes planetaanimation{
+    0%{transform: rotate(0grad);}
+    50%{transform: rotate(50grad);}
+    100%{transform: rotate(0grad);}
+}
+
+#fogueteanimation{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top : 100px;
+    animation: fogueteanimation 10s infinite;
+}
+
+#solanimation{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top : 400px;
+    left: 450px;
+    animation: solanimation 10s infinite;
+}
+
+#luaanimation{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top : 300px;
+    left: 1900px;
+    animation: luaanimation 10s infinite;
+}
+
+#planetaanimation{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top : 700px;
+    left: 1550px;
+    animation: planetaanimation 10s infinite;
+}
